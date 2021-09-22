@@ -123,14 +123,14 @@
     "pako": "^2.0.3",
     "reactivestates": "2.0.1",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^6.6.6",
+    "rxjs": "^7.1.0",
     "screenfull": "^4.2.1",
     "swagger-ui": "^3.50.0",
     "tablesorter": "^2.31.3",
     "ts-action": "^11.0.0",
     "ts-action-operators": "^9.1.2",
     "typedjson": "^1.5.1",
-    "urijs": "^1.19.2",
+    "urijs": "^1.19.7",
     "zone.js": "~0.11.4"
   },
   "scripts": {
