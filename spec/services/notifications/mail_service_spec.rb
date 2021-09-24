@@ -176,8 +176,7 @@ describe Notifications::MailService, type: :model do
         expect(UserMailer)
           .to have_received(:wiki_content_added)
                 .with(recipient,
-                      journal.journable,
-                      journal.user)
+                      journal.journable)
 
         expect(mail)
           .to have_received(:deliver_later)
@@ -205,8 +204,7 @@ describe Notifications::MailService, type: :model do
         expect(UserMailer)
           .to have_received(:wiki_content_updated)
                 .with(recipient,
-                      journal.journable,
-                      journal.user)
+                      journal.journable)
 
         expect(mail)
           .to have_received(:deliver_later)
@@ -284,8 +282,7 @@ describe Notifications::MailService, type: :model do
         expect(UserMailer)
           .to have_received(:news_added)
                 .with(recipient,
-                      journal.journable,
-                      journal.user)
+                      journal.journable)
 
         expect(mail)
           .to have_received(:deliver_later)
@@ -358,8 +355,7 @@ describe Notifications::MailService, type: :model do
       expect(UserMailer)
         .to have_received(:message_posted)
               .with(recipient,
-                    journal.journable,
-                    actor)
+                    journal.journable)
 
       expect(mail)
         .to have_received(:deliver_later)
